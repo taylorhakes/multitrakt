@@ -1,0 +1,22 @@
+{
+	"name": "Trakt.tv",
+	"version":        "1.2.5",
+	"description":    "Save ratings to multiple sites",
+    "content_scripts": [
+        {
+            "matches": ["http://trakt.tv/movie/*"],
+            "js" : ["js/libs/jquery.js","js/trakt-cs.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://www.themoviedb.org/*"],
+            "js" : ["js/tmdb-cs.js"],
+            "run_at": "document_end"
+        }
+
+    ],
+    "permissions":    [
+        "*://*/*"
+    ],
+	"manifest_version":       2
+}
