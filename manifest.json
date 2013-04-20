@@ -7,11 +7,6 @@
             "matches": ["http://trakt.tv/movie/*"],
             "js" : ["js/libs/jquery.js","js/trakt-cs.js"],
             "run_at": "document_end"
-        },
-        {
-            "matches": ["https://www.themoviedb.org/*"],
-            "js" : ["js/tmdb-cs.js"],
-            "run_at": "document_end"
         }
 
     ],
